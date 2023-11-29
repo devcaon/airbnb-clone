@@ -3,7 +3,7 @@ import './globals.css'
 import Navbar from './components/navbar/Navbar'
 
 export const metadata = {
-  title: 'Airbnb',
+  title: 'Airbnb-Clone',
   description: 'Airbnb clone app',
 }
 
