@@ -1,9 +1,9 @@
-import { Nunito } from 'next/font/google'
 import './globals.css'
+import { Nunito } from 'next/font/google'
 import Navbar from './components/navbar/Navbar'
 import Banner from './components/banner/Banner'
 import ClientOnly from './components/ClientOnly'
-import Modal from './components/modals/Modal'
+import RegisterModal from './components/modals/RegisterModal'
 
 export const metadata = {
   title: 'Airbnb-Clone',
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={font.className}>
         <ClientOnly>
           <Banner />
-          <Modal isOpen title='Hello World' />
+          <RegisterModal />
           <Navbar />
         </ClientOnly>
         {children}
